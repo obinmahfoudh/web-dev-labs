@@ -6,16 +6,59 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, Web!</h1>
-    <p>This is my first HTML Page for this course</p>
+    <header>
+        <h1>Hello, Web!</h1>
+        <p>This is my first HTML Page for this course</p>
+    </header>
+    <nav>
+        <a href='#'>Home</a>
+        <a href='#'>About</a>
+        <a href='#'>Contact</a>
+    </nav>
+    <main>
+        <h2>About This Page</h2>
+        <ul>
+            <li>item one</li>
+            <li>item two</li>
+            <li>item three</li>
+        </ul>
+        <a href= "https://www.w3schools.com/tags/ref_byfunc.asp"> HTML element reference sheet</a>
+        <img src="WebsiteScreenshot.png" alt="Picture of reference sheet website">
 
-    <h2>About This Page</h2>
-    <ul>
-        <li>item one</li>
-        <li>item two</li>
-        <li>item three</li>
-    </ul>
-    <a href= "https://www.w3schools.com/tags/ref_byfunc.asp"> HTML element reference sheet</a>
-    <img src="WebsiteScreenshot.png" alt="Picture of reference sheet website">
+        <table>
+            <caption>My course schedule</caption>
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Topic</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>4</td>
+                    <td>Advanced HTML</td>
+                </tr>
+            </tbody>
+        </table>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="msg">Message</label>
+            <textarea id="msg" name="msg"></textarea>
+            <label for="referral">How did you find this page?</label>
+            <select id="referral" name="referral">
+            <option value="search">Search engine</option>
+            <option value="social">Social media</option>
+            <option value="friend">A friend</option>
+            </select>
+            <button type="submit">Send</button>
+        </form>
+    </main>
+    <footer>
+        <p>Obaid Bin-Mahfoudh - 2026</p>
+    </footer>
+
 </body>
 </html>
