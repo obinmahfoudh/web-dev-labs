@@ -97,15 +97,19 @@ header {
 
 @media (max-width: 600px) {
 #main-nav {
-flex-direction: column;
-}
+    flex-direction: column;
+    }
 h1 {
-font-size: 1.5rem;
+    font-size: 1.5rem;
+    }
 }
-}
-
-
 
 #main-nav a{
     transition: background-color 0.2s ease;
+}
+
+/* Lab 7 */
+body.dark {
+    background-color: #111827;
+    color: #f1f5f9;
 }
