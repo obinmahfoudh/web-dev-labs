@@ -1,5 +1,6 @@
-
+/* Lab 3 */
 body {
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
     color: #222;
     max-width: 700px;
@@ -9,50 +10,102 @@ h1 {
     color: #0f9488;
 }
 
+
+
+/* Lab 5 */
 * {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
 header {
-padding: 24px;
-background-color: #0f9488;
-color: white;
-margin-bottom: 16px;
+    padding: 24px;
+    background-color: #0f9488;
+    color: white;
+    margin-bottom: 16px;
 }
+
 header h1 {
-color: white;
+    color: white;
 }
 
 #main-nav {
-display: flex;
-gap: 8px;
-justify-content: center;
-background-color: #0d3b36;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    background-color: #0d3b36;
 }
 
 #main-nav a {
-color: white;
-text-decoration: none;
-padding: 12px;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
 }
 #main-nav a:hover {
-background-color: #14b8a6;
+    background-color: #14b8a6;
 }
 
 table {
-border-collapse: collapse;
-width: 100%;
+    border-collapse: collapse;
+    width: 100%;
 }
 th, td {
-padding: 10px;
-border: 1px solid #ccc;
+    padding: 10px;
+    border: 1px solid #ccc;
 }
 thead {
-background-color: #e6f7f4;
+    background-color: #e6f7f4;
 }
 input, textarea, select {
-display: block;
-width: 100%;
-max-width: 400px;
-padding: 8px;
-margin-bottom: 12px;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+
+/* Lab 6 */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.image-wrap {
+    position: relative;
+    display: inline-block;
+}
+.badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #dc2626;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    z-index: 5;
+}
+
+@media (max-width: 900px) {
+    table {
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%; height: auto;
+    }
+
+}
+
+@media (max-width: 600px) {
+#main-nav {
+flex-direction: column;
+}
+h1 {
+font-size: 1.5rem;
+}
+}
+
+
+
+#main-nav a{
+    transition: background-color 0.2s ease;
 }
